@@ -1,4 +1,7 @@
 # ZExoRecyclerPlayer [![](https://jitpack.io/v/alzoubiMohammed/ZExoRecyclerPlayer.svg)](https://jitpack.io/#alzoubiMohammed/ZExoRecyclerPlayer)
+
+## Description
+
 Android library for working with Exoplayer in RecyclerView
 
 ## Getting Started
@@ -24,4 +27,6 @@ dependencies {
 	}
 ```  
 
+## License
 
+This project is licensed under the [MIT License] License - see the LICENSE.md file for details
