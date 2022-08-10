@@ -3,7 +3,7 @@ package com.zoubi.exorecyclervideoplayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
-import com.zoubi.exorecyclervideoplayer.common.setupWithExoplayer
+import com.m.zoubi.exorecyclerplayer.setupWithExoplayer
 
 class MainActivity : AppCompatActivity() {
     lateinit var recyclerView: RecyclerView
