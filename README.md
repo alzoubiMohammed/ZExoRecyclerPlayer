@@ -35,7 +35,7 @@ dependencies {
   {StyledPlayerView,PlayerControlView....} recommend to use 
   <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-  [Hilt]:https://github.com/googlecodelabs/android-hilt Like:
+[forks-url]:https://github.com/googlecodelabs/android-hilt Like:
 
 ```
 @Module()
