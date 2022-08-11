@@ -65,6 +65,11 @@ AppModule {
 
 ```  
     class Fragment{
+        @Inject
+        lateinit var exoPlayer: ExoPlayer
+
+        @Inject
+        lateinit var playerView: StyledPlayerView
          ...
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
          ...
@@ -82,9 +87,14 @@ AppModule {
 
 ```  
        class Activity{
-         ...
+         @Inject
+         lateinit var exoPlayer: ExoPlayer
+
+         @Inject
+         lateinit var playerView: StyledPlayerView
+          ...
         override fun onCreate(savedInstanceState: Bundle?) {
-         ...
+          ...
          RecyclerViewWallInfo.setupWithExoplayer(
                 exoPlayer,
                 playerView,
