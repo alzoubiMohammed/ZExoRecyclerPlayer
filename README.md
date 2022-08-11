@@ -32,7 +32,7 @@ dependencies {
 ### Usage
 
 * Step 1. Add singleton Exoplayer and singleton PlayerView like
-  {StyledPlayerView,PlayerControlView....} recommend to use (<a href="https://github.com/googlecodelabs/android-hilt">Hilt</a>) Like:
+  {StyledPlayerView,PlayerControlView....} recommend to use <a href="https://github.com/googlecodelabs/android-hilt">Hilt</a> Like:
 
 ```
 @Module()
@@ -135,7 +135,7 @@ AppModule {
 ``` 
 
 * Step 4. finally ViewHolder need to implement the VideoPlayerSetup 
-* and you can read more about [mediaSource] :https://exoplayer.dev/media-sources.html
+* and you can read more about <a href="https://exoplayer.dev/media-sources.html">MediaSource</a>
 
 ``` 
   class VideoViewHolder(itemView:View) :
