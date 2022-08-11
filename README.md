@@ -2,7 +2,12 @@
 
 ## Description
 
-Android library for working with Exoplayer in RecyclerView
+ZExoRecyclerPlayer is an Android library that allows developers to easily create RecyclerView with Exoplayer .
+
+Please feel free to use this.
+
+##Features
+* AutoPlay Video When scroll RecyclerView
 
 ## Getting Started
 
@@ -73,7 +78,7 @@ AppModule {
          ...
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
          ...
-         RecyclerViewWallInfo.setupWithExoplayer(
+         recyclerView.setupWithExoplayer(
                 exoPlayer,
                 playerView,
                 viewLifecycleOwner
@@ -95,7 +100,7 @@ AppModule {
           ...
         override fun onCreate(savedInstanceState: Bundle?) {
           ...
-         RecyclerViewWallInfo.setupWithExoplayer(
+         recyclerView.setupWithExoplayer(
                 exoPlayer,
                 playerView,
                 this
