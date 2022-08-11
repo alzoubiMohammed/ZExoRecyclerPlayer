@@ -12,7 +12,7 @@ Please feel free to use this.
 
 ## Demo
 
-![](https://github.com/alzoubiMohammed/resorce/blob/main/ezgif-3-78df004f52.gif)
+![](https://github.com/alzoubiMohammed/resources/blob/main/ezgif-3-78df004f52.gif)
 
 ## Getting Started
 
