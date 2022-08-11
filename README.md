@@ -32,7 +32,7 @@ dependencies {
 ### Usage
 
 * Step 1. Add singleton Exoplayer and singleton PlayerView like
-  {StyledPlayerView,PlayerControlView....} recommend to use <p align="right">(<a href="https://github.com/googlecodelabs/android-hilt">Hilt</a>)</p> Like:
+  {StyledPlayerView,PlayerControlView....} recommend to use (<a href="https://github.com/googlecodelabs/android-hilt">Hilt</a>) Like:
 
 ```
 @Module()
