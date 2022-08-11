@@ -1,4 +1,4 @@
-package com.zoubi.library.exorecyclervideoplayer
+package com.zoubi.exorecyclervideoplayer
 
 import android.content.Context
 import android.os.Bundle
@@ -8,8 +8,9 @@ import com.bumptech.glide.RequestManager
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.ui.StyledPlayerView
 import com.google.android.exoplayer2.util.Util
+import com.zoubi.exorecyclervideoplayer.databinding.ActivityMainBinding
+import com.zoubi.exorecyclervideoplayer.R
 import com.zoubi.library.exorecyclervideoplayer.common.setupWithExoplayer
-import com.zoubi.library.exorecyclervideoplayer.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject

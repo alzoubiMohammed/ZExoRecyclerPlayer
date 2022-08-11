@@ -1,4 +1,4 @@
-package com.zoubi.library.exorecyclervideoplayer.di
+package com.zoubi.exorecyclervideoplayer.di
 
 import android.content.Context
 import com.bumptech.glide.Glide
@@ -7,7 +7,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.ui.AspectRatioFrameLayout
 import com.google.android.exoplayer2.ui.StyledPlayerView
-import com.zoubi.library.exorecyclervideoplayer.R
+import com.zoubi.exorecyclervideoplayer.R
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

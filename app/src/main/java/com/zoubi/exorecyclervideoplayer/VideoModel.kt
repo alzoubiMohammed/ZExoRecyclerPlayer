@@ -1,4 +1,4 @@
-package com.zoubi.library.exorecyclervideoplayer
+package com.zoubi.exorecyclervideoplayer
 
 import android.net.Uri
 import com.google.android.exoplayer2.MediaItem

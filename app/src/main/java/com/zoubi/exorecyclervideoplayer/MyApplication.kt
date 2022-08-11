@@ -1,4 +1,4 @@
-package com.zoubi.library.exorecyclervideoplayer
+package com.zoubi.exorecyclervideoplayer
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
