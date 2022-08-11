@@ -13,8 +13,8 @@ Android library for working with Exoplayer in RecyclerView
 ```
 allprojects {
 	repositories {
-			...
-			maven { url 'https://jitpack.io' }
+	 ...
+	 maven { url 'https://jitpack.io' }
 		}
 	}
 ```  
