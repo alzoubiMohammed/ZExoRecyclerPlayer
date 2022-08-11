@@ -10,6 +10,10 @@ Please feel free to use this.
 
 * AutoPlay Video When scroll RecyclerView
 
+## Demo
+
+![](https://github.com/alzoubiMohammed/resorce/blob/main/ezgif-3-78df004f52.gif)
+
 ## Getting Started
 
 ### Dependencies

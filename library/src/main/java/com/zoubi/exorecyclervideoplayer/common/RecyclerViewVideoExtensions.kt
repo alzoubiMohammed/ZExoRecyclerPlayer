@@ -49,12 +49,35 @@ fun RecyclerView.setupWithExoplayer(
                     val layoutManager = layoutManager as LinearLayoutManager
                     val firstPosition = layoutManager.findFirstVisibleItemPosition()
                     val lastPosition = layoutManager.findLastVisibleItemPosition()
+                    // special case when the end of the list has been reached.
+                    // Need to handle that with this bit of logic
+                    if (canScrollVertically(1).not()) {
+                        val view = layoutManager.findViewByPosition(lastPosition)
+                        view?.getPercentage { percentage ->
+                            val tag =
+                                findViewHolderForAdapterPosition(lastPosition)?.itemView?.tag
+
+                            if (playPosition == lastPosition || percentage < 60.toFloat() || tag == null) return@getPercentage
+
+                            if (videoPlayerSetup != null) exoPlayer.stopVideo(
+                                playerView
+                            )
+                            videoPlayerSetup = tag as VideoPlayerSetup
+                            playPosition = lastPosition
+                            exoPlayer.playVideo()
+                            AttachedView = findViewHolderForAdapterPosition(lastPosition)?.itemView
+
+
+                        }
+                        return
+                    }
+
                     val list = arrayListOf<MaxWithIndex>()
                     //get all view holder that implement @VideoPlayerSetup
                     for (pos in firstPosition..lastPosition) {
                         val tag =
                             findViewHolderForAdapterPosition(pos)?.itemView?.tag
-                     //if tag ==null  that mean viewHolder is not video and will ignore
+                        //if tag ==null  that mean viewHolder is not video and will ignore
                         if (tag != null) {
                             val view = layoutManager.findViewByPosition(pos)
                             view?.getPercentage { percentage ->
@@ -72,7 +95,7 @@ fun RecyclerView.setupWithExoplayer(
                             if (max > 60.toFloat()) exoPlayer.playWhenReady = true
                             return@maxOfWithIndex
                         }
-                     //to get the implement @VideoPlayerSetup
+                        //to get the implement @VideoPlayerSetup
                         val tag =
                             findViewHolderForAdapterPosition(index)?.itemView?.tag
 
