@@ -30,7 +30,8 @@ dependencies {
 ```  
 
 ### Usage
-
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 * Step 1. Add singleton Exoplayer and singleton PlayerView like
   {StyledPlayerView,PlayerControlView....} recommend to use [Hilt]:https://github.com/googlecodelabs/android-hilt Like:
 
