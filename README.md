@@ -2,10 +2,6 @@
 
 ## Description
 
-
-Uploading SVID_20220811_142011_1.mp4…
-
-
 ZExoRecyclerPlayer is an Android library that allows developers to easily create RecyclerView with Exoplayer .
 
 Please feel free to use this.
