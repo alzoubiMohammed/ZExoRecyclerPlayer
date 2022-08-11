@@ -1,4 +1,4 @@
-package com.zoubi.exorecyclervideoplayer
+package com.zoubi.library.exorecyclervideoplayer
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.zoubi.exorecyclervideoplayer.test", appContext.packageName)
+        assertEquals("com.zoubi.library.exorecyclervideoplayer", appContext.packageName)
     }
 }

@@ -1,10 +1,10 @@
-package com.zoubi.exorecyclervideoplayer
+package com.zoubi.library.exorecyclervideoplayer
 
 import android.net.Uri
 import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.source.ProgressiveMediaSource
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSource
-import com.zoubi.exorecyclervideoplayer.common.VideoData
+import com.zoubi.library.exorecyclervideoplayer.common.VideoData
 
 data class VideoModel(
     val id: Int,

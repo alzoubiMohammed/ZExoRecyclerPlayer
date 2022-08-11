@@ -1,4 +1,4 @@
-package com.zoubi.exorecyclervideoplayer
+package com.zoubi.library.exorecyclervideoplayer
 
 import org.junit.Test
 

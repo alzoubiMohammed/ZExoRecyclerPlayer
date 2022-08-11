@@ -1,4 +1,4 @@
-package com.zoubi.exorecyclervideoplayer.common
+package com.zoubi.library.exorecyclervideoplayer.common
 
 import android.view.View
 import android.view.ViewGroup

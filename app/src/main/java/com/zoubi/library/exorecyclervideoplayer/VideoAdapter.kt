@@ -1,4 +1,4 @@
-package com.zoubi.exorecyclervideoplayer
+package com.zoubi.library.exorecyclervideoplayer
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,9 +8,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
-import com.zoubi.exorecyclervideoplayer.common.VideoData
-import com.zoubi.exorecyclervideoplayer.common.VideoPlayerSetup
-import com.zoubi.exorecyclervideoplayer.databinding.ItemVideoBinding
+import com.zoubi.library.exorecyclervideoplayer.common.VideoData
+import com.zoubi.library.exorecyclervideoplayer.common.VideoPlayerSetup
+import com.zoubi.library.exorecyclervideoplayer.databinding.ItemVideoBinding
 
 class VideoAdapter(val requestManager: RequestManager) :
     ListAdapter<VideoModel, VideoAdapter.VideoViewHolder>(ItemCallback) {
