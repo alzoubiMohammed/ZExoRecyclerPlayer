@@ -34,7 +34,7 @@ allprojects {
 ```
 dependencies {
 
-  implementation 'com.github.alzoubiMohammed:ZExoRecyclerPlayer:1.0.1'
+  implementation 'com.github.alzoubiMohammed:ZExoRecyclerPlayer:1.2.2'
 	
 	}
 ```  
