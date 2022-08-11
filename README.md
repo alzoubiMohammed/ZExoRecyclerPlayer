@@ -153,6 +153,7 @@ AppModule {
      ...
      
     fun bind(videoItem:VideoItem){
+     *important to help ZExoRecyclerPlayer to know are ViewHolder has video
       itemView.tag = this
        ...
     }
