@@ -7,6 +7,7 @@ ZExoRecyclerPlayer is an Android library that allows developers to easily create
 Please feel free to use this.
 
 ##Features
+
 * AutoPlay Video When scroll RecyclerView
 
 ## Getting Started
