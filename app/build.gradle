@@ -51,9 +51,18 @@ dependencies {
     implementation "com.google.dagger:hilt-android:2.40"
     kapt "com.google.dagger:hilt-android-compiler:2.40"
     kapt 'androidx.hilt:hilt-compiler:1.0.0'
-
+    implementation 'androidx.hilt:hilt-work:1.0.0'
+    kapt 'androidx.hilt:hilt-compiler:1.0.0'
     //glide
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     kapt 'com.github.bumptech.glide:compiler:4.12.0'
     implementation 'jp.wasabeef:glide-transformations:4.3.0'
+
+    //work manger
+    implementation "androidx.work:work-runtime-ktx:2.7.1"
+
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
+
 }
