@@ -10,6 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.ui.StyledPlayerView
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.cancel
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import java.lang.ref.WeakReference
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
@@ -31,6 +35,7 @@ fun RecyclerView.setupWithExoplayer(
 ) {
 
     exoPlayer.setupWithPlayerViewAndLifecycle(playerView, lifecycleOwner)
+
 
     addOnScrollListener(object : RecyclerView.OnScrollListener() {
 
@@ -205,15 +210,22 @@ fun ExoPlayer.setupWithPlayerViewAndLifecycle(
 ) {
 
     bindToLifecycle(lifecycleOwner, playerView)
+     var job:Job?=null
 
     addListener(object : Player.Listener {
         override fun onPlayerStateChanged(playWhenReady: Boolean, playbackState: Int) {
             when (playbackState) {
                 Player.STATE_BUFFERING -> {
-                    if (videoPlayerSetup != null) {
-                        videoPlayerSetup!!.videoProgress().visibility =
-                            View.VISIBLE
+
+                    job = lifecycleOwner.lifecycleScope.launch{
+                        delay(1000)
+                        if (videoPlayerSetup != null) {
+                            videoPlayerSetup!!.videoProgress().visibility =
+                                View.VISIBLE
+                        }
                     }
+
+
                 }
                 Player.STATE_ENDED -> {
 
@@ -224,6 +236,7 @@ fun ExoPlayer.setupWithPlayerViewAndLifecycle(
                 Player.STATE_READY -> {
 
                     if (videoPlayerSetup != null) {
+                        job?.cancel()
                         videoPlayerSetup!!.videoProgress().visibility =
                             View.GONE
                     }
